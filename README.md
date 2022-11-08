@@ -1,5 +1,5 @@
 
-1. https://www.docker.com
+1. https://www.docker.com에 접속하여 docker를 설치해 주세요
 
 2. cd ~
 3. git clone https://github.com/JaeWanBot/test_for_privateIP
