@@ -9,7 +9,7 @@
 RECIPANTS='example@example.com'
 PHONE=''
 ```
-6. ./docker-compose up 해당 명령어를 입력하면 아래와 같이 email 및 sms를 받을 수 있습니다.
+6. <b>./docker-compose up</b> 해당 명령어를 입력하면 아래와 같이 email 및 sms를 받을 수 있습니다.
 
 ## Result
 <img src="documentation/email_response.png" height="70" alt="email">
