@@ -10,9 +10,8 @@ RECIPANTS='example@example.com'
 PHONE=''
 ```
 
-
 ```
-<br>가비아의 API는 특정 IP만 호출할 수 있음으로 해당 IP를 알려주시면 등록하겠습니다!</br>
+가비아의 API는 특정 IP만 호출할 수 있음으로 현대 측 IP를 알려주시면 등록하겠습니다!
 ```
 
 1. <b>sudo docker-compose up</b> 해당 명령어를 입력하면 아래와 같이 email 및 sms를 받을 수 있습니다.
