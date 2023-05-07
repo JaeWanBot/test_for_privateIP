@@ -1,0 +1,6 @@
+{
+    "description": "HMGclobotsms",
+    "version": "0.0.1",
+    "images": ["emailtest.tgz"],
+    "icon": "sms.png"
+  }

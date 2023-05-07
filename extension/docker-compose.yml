@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  emailtest:
+    image: emailtest:latest
+    restart: unless-stopped
+    network_mode: host
+    dns:
+      - 8.8.8.8
+    environment:
+      - SCOUT_IP=192.168.2.5
+      - BACKEND_SERVER_ADDRESS=http://127.0.0.1:21000/back
+      - EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+      - EMAIL_HOST='10.7.20.48'
+      - EMAIL_USE_TLS=True
+      - EMAIL_PORT=25
+      - EMAIL_HOST_USER='ZD23233'
+      - EMAIL_HOST_PASSWORD='clientadmin123!'
+      - RECIPANTS="timo@clobot.co.kr"
+    command: >
+      sh -c "
+              python manage.py migrate &&
+              python manage.py email_send
+            "
